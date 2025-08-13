@@ -1,0 +1,21 @@
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+# set  main file
+   RewriteBase /PHP/part4/public  
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_FILENAME} !-f
+                                  # ?name=susu L stop      
+   RewriteRule  ^(.+)$ index.php?url=$1  [QSA,L]
+
+
+</IfModule>
+
+#QSA(Append Query String from request to substitute URL)
+    # Request URL =/aboutus?addresss=phone
+    # Redirect   =  index.php?address =yangon
+
+#L(Stop processing rules)
+
+  

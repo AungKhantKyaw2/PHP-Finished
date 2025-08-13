@@ -1,0 +1,4 @@
+#Options +Indexes // allowed to enter the app directory
+
+#Not allowed to enter the app directory
+Options -Indexes 
