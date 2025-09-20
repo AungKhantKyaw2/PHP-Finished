@@ -1,5 +1,6 @@
 <?php
 
+require_once('Test.php');
 
 class Music extends Test{
   
