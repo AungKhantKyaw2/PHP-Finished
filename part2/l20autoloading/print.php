@@ -7,7 +7,7 @@ require_once("Video.php");
 require_once("gallery/Photo.php");
 
 $musicobj = new Music();
-$musicobj->play();
+$musicobj->play1();
 
 
 $videoobj= new Video();
